@@ -165,7 +165,7 @@
         </div>
       </section>
 
-      <section class="section main__section--inverse">
+      <section class="section main__main__section">
         <div class="container">
           <h2 class="second-title">Наша команда</h2>
           <ul class="team">
@@ -395,6 +395,7 @@
             >Web
             <span class="logo__white">Studio</span>
           </a>
+
           <address class="address">
             <ul class="address__list">
               <li class="address__item">
@@ -402,7 +403,7 @@
                   href="https://goo.gl/maps/XaRB1rdR4rSVDEf5A"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="address__link"
+                  class="address__link address__address__link"
                 >
                   г. Киев, пр-т Леси Украинки, 26
                 </a>
@@ -420,9 +421,9 @@
             </ul>
           </address>
         </div>
-        <div class="footer-social-container">
-          <h3 class="third-title footer-white-title">присоединяйтесь</h3>
-          <ul class="social">
+        <div class="social-container">
+          <h3 class="third-title third-title--inverse">присоединяйтесь</h3>
+          <ul class="social page-footer__social">
             <li class="social__item">
               <a href="" class="social__link social__link--inverse">
                 <svg
@@ -471,18 +472,18 @@
         </div>
 
         <form action="#" class="footer-form">
-          <label class="footer-label">
+          <label class="third-title third-title--inverse">
             подпишитесь на рассылку
             <input
               type="email"
-              class="footer-input-email"
+              class="footer-form__email"
               placeholder="E-mail"
               name="user-email"
             />
           </label>
-          <button type="submit" class="primery-btn footer-btn">
+          <button type="submit" class="primery-btn footer-form__primery-btn">
             Подписаться
-            <svg class="twiter-svg" width="24px" height="24px">
+            <svg class="primery-btn__twiter" width="24px" height="24px">
               <use href="./images/icons.svg#icon-subscribe"></use>
             </svg>
           </button>
@@ -492,87 +493,97 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close" data-modal-close>
+        <button type="button" class="modal__close" data-modal-close>
           <svg width="18px" height="18px">
             <use href="./images/icons.svg#icon-modal-close-btn"></use>
           </svg>
         </button>
-        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
-        <form action="#" class="primery-form">
-          <div class="form-field">
-            <label class="modal-label" for="user-name">Имя</label>
-            <div class="svg-position">
+
+        <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
+
+        <form action="#" class="modal-form">
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="user-name">Имя</label>
+            <div class="modal-form__container">
               <input
                 type="text"
-                class="form-input"
+                class="modal-form__input"
                 required
                 name="user-name"
                 minlength="2"
                 id="user-name"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal-form__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-Input-name"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field">
-            <label class="modal-label" for="user-tel">Телефон</label>
-            <div class="svg-position">
+
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="user-tel">Телефон</label>
+            <div class="modal-form__container">
               <input
                 type="tel"
-                class="form-input"
+                class="modal-form__input"
                 required
                 name="user-tel"
                 id="user-tel"
                 title="+380 (95) 111-11-11"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal-form__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-Input-tel"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field">
-            <label class="modal-label" for="user-email">Почта</label>
-            <div class="svg-position">
+
+          <div class="modal-form__field">
+            <label class="modal-form__label" for="user-email">Почта</label>
+            <div class="modal-form__container">
               <input
                 type="email"
-                class="form-input"
+                class="modal-form__input"
                 required
                 name="user-email"
                 id="user-email"
               />
-              <svg class="form-svg" width="18px" height="18px">
+              <svg class="modal-form__svg" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-Input-mail"></use>
               </svg>
             </div>
           </div>
-          <div class="form-field-textarea">
-            <label class="modal-label" for="user-commet">Комментарий</label>
+
+          <div class="textarea-wrap">
+            <label class="modal-form__label" for="user-commet"
+              >Комментарий</label
+            >
             <textarea
-              class="modal-textarea"
+              class="textarea-wrap__textarea"
               name="user-commet"
               id="user-commet"
               placeholder="Введите текст"
             ></textarea>
           </div>
-          <div class="form-field-checkbox">
+
+          <div class="check-wrap">
             <input
               type="checkbox"
               id="policy"
               name="policy"
-              class="policy-check visually-hidden"
+              class="check-wrap__checkbox visually-hidden"
             />
-            <label for="policy" class="check-text">
+            <label for="policy" class="check-wrap__text">
               <span>
-                <svg class="check-svg" width="16px" height="15px">
+                <svg class="check-wrap__svg" width="16px" height="15px">
                   <use href="./images/icons.svg#icon-vector-check"></use>
                 </svg>
               </span>
               Соглашаюсь с рассылкой и принимаю
-              <a href="" class="label-link">Условия договора</a>
+              <a href="" class="check-wrap__link">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="primery-btn modal-btn">Отправить</button>
+          <button type="submit" class="primery-btn modal-form__btn">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
