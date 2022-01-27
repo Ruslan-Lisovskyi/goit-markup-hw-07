@@ -1,3 +1,29 @@
-body {
-  color: teal ();
-}
+//SETTINGS//
+
+@import './utils/vars';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
+//COMPONENTS//
+
+@import './components/container';
+@import './components/section';
+@import './components/second-title';
+@import './components/third-title';
+@import './components/logo';
+@import './components/primery-btn';
+@import './components/social';
+@import './components/modal';
+
+//SECTIONS//
+
+@import './header';
+@import './hero';
+@import './peculiarities';
+@import './specialization';
+@import './team';
+@import './clients';
+@import './filters';
+@import './portfolio';
+@import './footer';

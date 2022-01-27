@@ -1,0 +1,17 @@
+.peculiarities {
+  display: flex;
+}
+
+.peculiarities__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.peculiarities__location {
+  background: var(--secondary-bgr-color);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+}
