@@ -9,15 +9,14 @@
   background-color: var(--btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  padding: 10px 32px;
+  padding: 10px;
   min-width: 200px;
   min-height: 50px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.primery-btn:hover,
-.primery-btn:focus {
-  background-color: var(--primery-btn-hover);
+  &:focus,
+  &:hover {
+    background-color: var(--primery-btn-hover);
+  }
 }
