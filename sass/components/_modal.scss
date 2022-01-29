@@ -179,6 +179,10 @@
   transition-property: border-color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .check-wrap__checkbox:checked + & {
+    border: none;
+    background-color: var(--btn-color);
+  }
 }
 
 .check-wrap__svg {
@@ -186,14 +190,8 @@
   transition-property: fill, border;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.check-wrap__checkbox:checked + .check-wrap__text span {
-  border: none;
-  background-color: var(--btn-color);
-}
-
-.check-wrap__checkbox:checked + .check-wrap__text .check-wrap__svg {
-  border: none;
-  fill: var(--primery-bgr-color);
+  .check-wrap__checkbox:checked + .check-wrap__text & {
+    border: none;
+    fill: var(--primery-bgr-color);
+  }
 }
