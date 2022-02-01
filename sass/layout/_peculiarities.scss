@@ -6,7 +6,7 @@
   margin-right: 30px;
 }
 
-.peculiarities__location {
+.peculiarities__wrap {
   background: var(--secondary-bgr-color);
   border-radius: 4px;
   display: flex;
@@ -14,4 +14,14 @@
   align-items: center;
   height: 120px;
   margin-bottom: 30px;
+}
+
+.peculiarities__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
 }

@@ -31,7 +31,7 @@
   overflow: hidden;
 }
 
-.portfolio__text {
+.portfolio__overlay {
   position: absolute;
   font-family: var(--primery-font);
   font-size: 18px;
@@ -53,7 +53,7 @@
   }
 }
 
-.portfolio__name {
+.portfolio__tamp {
   border: 1px solid var(--border-color);
   border-top: none;
   padding: 20px 24px;
@@ -68,7 +68,7 @@
   margin-bottom: 4px;
 }
 
-.portfolio__view {
+.portfolio__text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;

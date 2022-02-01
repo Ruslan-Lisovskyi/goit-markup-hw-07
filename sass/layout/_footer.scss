@@ -15,10 +15,6 @@
   min-width: 216px;
 }
 
-.logo__white {
-  color: var(--primery-bgr-color);
-}
-
 .address {
   margin-top: 20px;
 }
@@ -51,21 +47,13 @@
   color: var(--primery-bgr-color);
 }
 
-.page-footer__social {
-  margin-top: 20px;
-}
-
-.third-title--inverse {
-  margin-bottom: 0;
+.page-footer__title {
   color: var(--primery-bgr-color);
-}
-
-.social__link--inverse {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.social__icon--inverse {
-  fill: var(--primery-bgr-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .footer-form {
@@ -94,13 +82,9 @@
   }
 }
 
-.footer-form__primery-btn {
+.page-footer__hero__btn {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 12px;
-}
-
-.primery-btn__twiter {
-  margin-left: 10px;
 }
